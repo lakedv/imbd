@@ -22,6 +22,7 @@ var router = new Navigo(root, useHash);
 
 router
 	.on({
+		'index': () => index(),
 		'listar': () => listar(database),
 		'nuevo': () => nuevo(database),
 		'home': () => home(database),
