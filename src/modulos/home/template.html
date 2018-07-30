@@ -1,7 +1,92 @@
-<div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+
+<body class="w3-light-grey">
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top: 0px;margin-bottom: 0px;margin-left: 50px;margin-right: 50px">
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+
+    <div class="w3-quarter">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTk3NDY5MTU0NV5BMl5BanBnXkFtZTgwNDI3MDE1NTM@._V1_UY209_CR1,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTU2OTYzODQyMF5BMl5BanBnXkFtZTgwNjU3Njk5NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjM3NDMwMDE2N15BMl5BanBnXkFtZTgwNDQ1Mjg5NTM@._V1_UY209_CR1,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BOGM3MzQwYzItNDA1Ny00MzIyLTg5Y2QtYTAwMzNmMDU2ZDgxXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BYmVjMWJhMTYtMzUxMC00ODdhLTk3YzMtZDFhNGUyOGFhYTY0XkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTU3MTQyNjQwM15BMl5BanBnXkFtZTgwNDgxNDczNTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BOTk3NjU5MjIxM15BMl5BanBnXkFtZTgwNjU0OTU2NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTgzOTE0MjY0Ml5BMl5BanBnXkFtZTgwNDczNjE5NTM@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMDBhOTMxN2UtYjllYS00NWNiLWE1MzAtZjg3NmExODliMDQ0XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BYzQ2YTk5ZTUtYTE0MC00NzIyLWJlMWMtYzc5YjVhNTdhZDk5XkEyXkFqcGdeQXVyNDg2MjUxNjM@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="https://m.media-amazon.com/images/M/MV5BYjcyYTk0N2YtMzc4ZC00Y2E0LWFkNDgtNjE1MzZmMGE1YjY1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTEzNzY0OTg0NTdeQTJeQWpwZ15BbWU4MDU3OTg3MjUz._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BNzIxMjYwNDEwN15BMl5BanBnXkFtZTgwMzk5MDI3NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTk1MzM1ODEwOV5BMl5BanBnXkFtZTgwMTE0OTA4NTM@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BYzEyYzg5N2YtZmYzZC00OTg0LWE3ZmYtNDZhMGFkOTBjOTYxXkEyXkFqcGdeQXVyNDg2MjUxNjM@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTk4MjIyMjExM15BMl5BanBnXkFtZTgwMDkwMDU5NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjQyMDIyNDc3N15BMl5BanBnXkFtZTgwMjYxMDE4NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjAzNTk1NDk1MV5BMl5BanBnXkFtZTgwNTIyODQ2NTM@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjM0MDQzNDgyMV5BMl5BanBnXkFtZTgwODI2Mzk4NTM@._V1_UY209_CR1,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjI5NDY5NzM2MV5BMl5BanBnXkFtZTgwMjQyODA3NTM@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+    </div>
+    
+    <div class="w3-quarter">
+        <img src="https://m.media-amazon.com/images/M/MV5BNzQwNzI2NzU3Nl5BMl5BanBnXkFtZTgwNDU4NzIwNTM@._V1_UY209_CR13,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTgwMDA0Mzg4OF5BMl5BanBnXkFtZTgwNjk1MjQ2NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTU4ODcxOTc1N15BMl5BanBnXkFtZTgwNzY3NTQ3NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTk1MzM1ODEwOV5BMl5BanBnXkFtZTgwMTE0OTA4NTM@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTU3MzE4MjkxNF5BMl5BanBnXkFtZTgwNTQxMzU3NTM@._V1_UX140_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTc5NzI1NjY4MV5BMl5BanBnXkFtZTgwNDIxNTIyNDM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjM5MDk2NDIxMF5BMl5BanBnXkFtZTgwNjU5NDk3NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjEzNDQzNDAwMl5BMl5BanBnXkFtZTgwNDkzNDU2NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjA0NDg4NjM5Ml5BMl5BanBnXkFtZTgwOTA1NzI5NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTU1NzAzMjkyMl5BMl5BanBnXkFtZTgwMDQ5MjY2NTM@._V1_UY209_CR0,0,140,209_AL_.jpg" onclick="onClick(this)" alt="">
+    </div>
+<!--
+    <div class="w3-quarter">
+      
+    </div>
+  </div>
+-->
+
+ <!-- Pagination --> 
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  <footer class="w3-container w3-padding-32 w3-grey">  
+                <div class="w3-row-padding">
+                  <div class="w3-third">
+                    <h3>INFO</h3>
+                    <p>Cualquier Similitud es pura coincidencia. 
+                       IMBd 2018®</p>      
+                  </div>
+                  <div class="w3-third">
+                    <h3>Categorias Populares</h3>
+                    <p>
+                      <span class="w3-tag w3-black w3-margin-bottom">Niños</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sci-Fi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+                      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Animie</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Accion</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+                      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Terror</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Animacion</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+                      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Aventuras</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Documental</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+                      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Comedia</span>
+                    </p>
+                  </div>
+                </div>
+              </footer>
